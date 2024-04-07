@@ -1,0 +1,11 @@
+<nz-input-group>
+  <div nz-row>
+    <span nz-tooltip nzTooltipTitle="ARM or Policy Update Date"><b>Date</b> (ARM/Policy Update)</span>
+  </div>
+  <div nz-row>
+    <nz-range-picker nzFormat="MM/dd/yyyy" nz-row [(ngModel)]="dateRange" [nzFormat]="dateFormat"
+                     (ngModelChange)="dateData(dateRange)" class="flex-no-wrap"></nz-range-picker>
+  </div>
+</nz-input-group>
+
+<router-outlet></router-outlet>
